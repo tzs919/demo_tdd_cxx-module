@@ -1,3 +1,11 @@
+下载到本地：
+git clone git@github.com:tzs919/demo_tdd_cxx-module.git
+
+根目录下执行以下命令，获取googletest
+git submodule init
+git submodule update
+
+
 docker exec -it mygcc bash
 
 cmake -S . -B build
