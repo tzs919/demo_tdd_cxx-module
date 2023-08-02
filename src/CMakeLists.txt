@@ -1,0 +1,1 @@
+add_library(words_repository words_repository.cc)
