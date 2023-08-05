@@ -9,6 +9,9 @@ git submodule update
 docker exec -it mygcc bash
 
 cmake -S . -B build
+Windows下要用：cmake -G "Unix Makefiles" -S . -B build
+这样就会使用gcc version 8.1.0编译器（C:\mingw64\bin\gcc.exe），否则会使用msvc编译器
+
 cmake --build build
 cd build
 ctest
